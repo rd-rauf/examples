@@ -3,7 +3,7 @@ let fs = require('fs');
 let contents = fs.readFileSync('input.txt', 'utf-8');
 
 let lines = contents.match(/[^\r\n]+/g);
-let lineNumbers = new Array(lines.length);
+let lineNumbers = [];
 
 for (let i = 0; i < lines.length; i++) {
     let line = lines[i];
